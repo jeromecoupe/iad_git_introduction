@@ -271,4 +271,10 @@ De nombreuses solutions existent également pour déployer vos repositories Git 
 
 ## Ressources
 
-- [Video d'introduction à Git par Mijingo](http://mijingo.com/products/screencasts/git-tutorial-video/) (Ryan Irelan)
+- [Get started with Git](http://alistapart.com/article/get-started-with-git) (A list Apart): Introduction générale.
+- [Video: Introduction to Git by Mijingo](http://mijingo.com/products/screencasts/git-tutorial-video/) (Ryan Irelan): très bonne introduction très didactique.
+- [Git reference et cheat cheets](http://git-scm.com/docs): les man pages de git dispponibles en ligne, pas toujours digeste mais bonne référence.
+- [Vidéos d'introduction à Git](http://git-scm.com/videos): vidéos officielles.
+- [Git Immersion](http://gitimmersion.com/index.html) ([Neo](http://www.neo.com/)): une bonne introduction à Git, très complet.
+- [Video: Introduction to Git with Scott Chacon of GitHub](https://www.youtube.com/watch?v=ZDR433b0HJY) (Scott Chacon): super complet.
+- [Deux petits](http://www.johnfaulds.com.au/journal/developing-expressionengine-sites-with-mamp-git-tower-and-beanstalk-part-1/) [guides](http://www.johnfaulds.com.au/journal/developing-expressionengine-sites-with-mamp-git-tower-and-beanstalk-part-2/) d'utilisation de Git avec ExpressionEngine et Beanstalk (John Faulds)
