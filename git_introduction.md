@@ -110,7 +110,7 @@ A ce stade, aucun fichier n'est encore monitoré par le système. Nous alons uti
 
 `git add '*.html'` permet d'ajouter tous les fichiers avec une extension .html au stage
 
-`git add *` permet d'ajouter tous les fichiers au stage
+`git add .` permet d'ajouter tous les fichiers au stage
 
 ### Git commit
 
@@ -136,15 +136,25 @@ Vous pouvez encore demander à Git d'afficher seulement les commits liés à un 
 
 Il est également possible de de visulaiser "graphiquement" votre repository avec les options suivantes: `git log --decorate --graph`
 
-### Revenir en arrière
+### Revenir en arrière avec revert et reset
 
 Il est possible de revenir en arrière dans votre historique. C'est à cela que servent les commits et les hashs qui les identifient.
 
+La commande `revert` permet de revenir en arrière sans affecter votre historique, vous revenez à votre commit choisi et vous derez ensuite faire un `add` et un `commit` pour enregistrer les changements en résolvant les conflits éventuels.
+
 `git revert 3ca7a822e4d4897eca2e651d0996429875452d05`
+
+Si vous voulez revenir à un commit précis en supprimant tous les commits ayant eu lieu après ce point, utilisez la commande `reset`:
+
+`git reset --hard 3ca7a822e4d4897eca2e651d0996429875452d05`
+
+Si vous utilisez convenablement les branches, ce genre de situation est assez rare.
 
 ### Ignorer des fichers
 
-Il est parfois très utile de pouvoir ignorer des fichiers dans un repository. Admettons que vous travaialliez avec un CMS dont certains fichiers de configuration sont spécifiques à votre machine locale. Il est important d'ignorer ces fichiers. De la même manière, des fichiers de log ou de cache peuvent également être ignorés systématiquement, de même que certains fichiers créés par l'opérating system.
+Il est parfois très utile de pouvoir ignorer des fichiers dans un repository. Si vous travaillez avec un CMS dont certains fichiers de configuration sont spécifiques à votre machine locale, il est important d'ignorer ces fichiers. 
+
+De la même manière, des fichiers de log ou de cache peuvent également être ignorés systématiquement, de même que certains fichiers créés par l'opérating system.
 
 Git ne peut ignorer que des fichiers qui ne sont pas monitorés (untracked files).
 
@@ -202,7 +212,7 @@ Si Git n'arrive pas à réalsier le merge de lui même parceque des changements 
 
 Git stash est une option intéressante lorsque vous avez une urgence et que vous voulez temporairement sauver votre travail non finalisé pour revenir à la situation de votre dernier commit.
 
-`git stash`: permet de sauver les changelents en cours et de revenir à la situation de votre dernier commit
+`git stash`: permet de sauver les changements en cours et de revenir à la situation de votre dernier commit
 
 `git stash list`: permet de voir une liste des stash sauvés 
 
@@ -228,9 +238,9 @@ par exemple
 
 `git push origin --all` permet de faire un push de toutes les branches vers le repository distant "origin".
 
-`git push origin --all` Permet de ne faire un push que de la branche master
+`git push origin master` Permet de ne faire un push que de la branche master
 
-`git push origin :dev` Permet de supprimer la branche "dev" du repository distant
+`git push origin :dev` ou `git remote remove dev` Permet de supprimer la branche "dev" du repository distant
 
 ### Git pull
 
