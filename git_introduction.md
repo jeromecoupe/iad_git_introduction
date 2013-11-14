@@ -116,6 +116,8 @@ A ce stade, aucun fichier n'est encore monitoré par le système. Nous alons uti
 
 `git commit -m "commit message"` permet de faire un commit à partir du stage en lui apposant le message "commit message"
 
+Pour faire des messages de commit plus élaborés, vous pouvez utiliser votre éditeur de code. Dans ce cas, entrez simplement la commande `git commit` et votre éditeur (nano dans notre cas) prendra le relais.
+
 ### Commit & adding
 
 `git commit -a -m "commit message"` permet d'ajouter vos fichier au stage et de  faire un commit simultanément en lui apposant le message "commit message"
