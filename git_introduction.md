@@ -14,11 +14,28 @@ En résumé:
 - Git (et github) facilitent grandement la collaboration et le travail en équipe sur des projets de natures très diverses
 - Git vous permet de créer des branches distinctes au sein de vos projets, de gérer celles-ci en parallèle ou des les combiner en une seule version.
 
-En outre de très nombreux tutoriaux, services et interfaces graphiques se sont dévelopés autur de Git, faisant de ce dernier un standard de l'industrie.
+En outre de très nombreux [tutoriaux](http://git-scm.com/videos), services et [logiciels disposant d'une interface graphique](http://git-scm.com/downloads/guis) se sont dévelopés autour de Git, faisant de ce dernier un standard de l'industrie.
 
 ## Installation
 
 Git est très facile à installer. Des programmes d'installation sont [disponibles pour toutes les plateformes](http://git-scm.com/downloads).
+
+## Configuration
+
+###  auteur et email
+
+Avant toute chose nous allons configurer git avec votre nom d'utilisateur et votre email
+
+`git config --global user.name "Your Name"` pour configurer votre nom d'utilisateur
+
+`git config --global user.email "name@domain.com"` pour configurer votre email 
+
+
+### Syntaxe coloring
+
+`git config --global color.ui true` pour avoir des jolies couleurs dans votre éditeur
+
+`git --config --global core.editor "nano"` pour utiliser nano à la place de Vi comme éditeur (More used to nano myself)
 
 ## Notions de base
 
@@ -40,7 +57,7 @@ Comme nous le verrons dans la suite, il est possible d'avoir de multiples branch
 
 Les commits sont les soumissions que vous faites dans votre repository Git. Ils sont composés du détail des changements apportés aux fichiers qui composent votre projet (modifications, ajouts ou suppressions) et du message qui accompagne et décrit ces modifications. Ces commit messages sont rédigés par vos soins et doivent idéalement décrire les changements apportés.
 
-Il est important de réaliser ces commits regulièrement, afin de pouvoir faciement revenir en arrière si besoin est. Pas assez de commits et il devient difficile d'identifier clairement la progresssion d'un projet tant les changements sont importants, trop de commits et on se noie vite dans un flot de détails.
+Il est important de réaliser ces commits regulièrement, afin de pouvoir facilement revenir en arrière si besoin est. Pas assez de commits et il devient difficile d'identifier clairement la progresssion d'un projet tant les changements sont importants, trop de commits et on se noie vite dans un flot de détails.
 
 ### Stage
 
@@ -52,7 +69,7 @@ Cela permet à Git d'être extrèmement flexible quant aux fichiers que vous vou
 
 Pour permettre la collaboration, tout le monde travaille à l'aide de repositories locaux, et les changements réalisés par chaque membre de l'équipe sont envoyés (`push`) vers un repository distant considéré comme étant la référence (il s'agit ici d'une pûre convention). Chacun va également aller chercher les derniers changements sur ce repository distant (`pull`). Cela permet une collaboraton facile, puisque chacun dispose en local d'une version identique du projet contenant les modifications apportées par chaque membre de l'équipe.
 
-C'est ici que les branches s'avèrent particulièrement utiles. Cachun peut crer une branche localement pour travailler sur la partie de projet dont il a la charge. Si une approche ne fonctionne pas, la branche peut simplement être supprimée. Une fois une partie de projet terminée, il suffit de l'appliquer à la branche master en utilisant un `merge`.
+C'est ici que les branches s'avèrent particulièrement utiles. Chacun peut créer une branche localement pour travailler sur la partie de projet dont il a la charge. Si une approche ne fonctionne pas, la branche peut simplement être supprimée. Une fois une partie de projet terminée, il suffit de l'appliquer à la branche master en utilisant un `merge`.
 
 Lors d'un merge, Git va comparer les fichiers des deux branches et les combiner du mieux qu'il peut. Par exemple, si un développeur à modifié les lignes 1-10 d'un fichier et un autre développeur à modifié les lignes 15-20, git va simplement combiner ces changements.
 
@@ -238,4 +255,8 @@ Personnellement, j'utilise [Git Tower](http://www.git-tower.com/) qui est un pro
 
 ## Déployer vos sites avec Git et Beanstalk
 
-De nombreuses solutions existent également pour déployer vos repositories Git vers un serveur de production ou de staging. Ma solution favorite est Beanstalk qui fait à la fois du hosting de repositories git et des délpoiements en FTP, SFTP etc. 
+De nombreuses solutions existent également pour déployer vos repositories Git vers un serveur de production ou de staging. Ma solution favorite est Beanstalk qui fait à la fois du hosting de repositories git et des délpoiements en FTP, SFTP etc.
+
+## Ressources
+
+- [Video d'introduction à Git par Mijingo](http://mijingo.com/products/screencasts/git-tutorial-video/) (Ryan Irelan)
