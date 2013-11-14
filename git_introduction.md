@@ -206,7 +206,7 @@ Pour appliquer les changements réalisés dans la branche `dev`à la branche `ma
 
 ### gestion de conflits
 
-Si Git n'arrive pas à réalsier le merge de lui même parceque des changements se sont produits pour les mêmes lignes des mêmes fichiers dans deux branches différentes, un conflit va se rpoduire et git va alors nous demander de le règler manuellement et d'ensuite faire un commit pour enregistrer les changelents et pouvoir terminer le `merge`.
+Si Git n'arrive pas à réalsier le merge de lui même parceque des changements se sont produits pour les mêmes lignes des mêmes fichiers dans deux branches différentes, un conflit va se produire et git va alors nous demander de le règler manuellement et d'ensuite faire un commit pour enregistrer les changelents et pouvoir terminer le `merge`.
 
 ### Git stash
 
@@ -267,7 +267,7 @@ Personnellement, j'utilise [Git Tower](http://www.git-tower.com/) qui est un pro
 
 ## Déployer vos sites avec Git et Beanstalk
 
-De nombreuses solutions existent également pour déployer vos repositories Git vers un serveur de production ou de staging. Ma solution favorite est Beanstalk qui fait à la fois du hosting de repositories git et des délpoiements en FTP, SFTP etc.
+De nombreuses solutions existent également pour déployer vos repositories Git vers un serveur de production ou de staging. Ma solution favorite est [Beanstalk](http://www.beanstalkapp.com/) qui fait à la fois du hosting de repositories git et des délpoiements en FTP, SFTP etc.
 
 ## Ressources
 
