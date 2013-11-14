@@ -35,7 +35,7 @@ Avant toute chose nous allons configurer git avec votre nom d'utilisateur et vot
 
 `git config --global color.ui true` pour avoir des jolies couleurs dans votre éditeur
 
-`git --config --global core.editor "nano"` pour utiliser nano à la place de Vi comme éditeur (More used to nano myself)
+`git config --global core.editor "nano"` pour utiliser nano à la place de Vi comme éditeur (More used to nano myself)
 
 ## Notions de base
 
