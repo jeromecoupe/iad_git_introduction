@@ -22,7 +22,7 @@ Git est très facile à installer. Des programmes d'installation sont [disponibl
 
 ## Configuration
 
-###  auteur et email
+### Auteur et email
 
 Avant toute chose nous allons configurer git avec votre nom d'utilisateur et votre email
 
@@ -204,9 +204,11 @@ Pour appliquer les changements réalisés dans la branche `dev`à la branche `ma
 
 `git branch -d dev` permet de supprimer la branche `dev`
 
-### gestion de conflits
+### Gestion de conflits
 
-Si Git n'arrive pas à réalsier le merge de lui même parceque des changements se sont produits pour les mêmes lignes des mêmes fichiers dans deux branches différentes, un conflit va se produire et git va alors nous demander de le règler manuellement et d'ensuite faire un commit pour enregistrer les changelents et pouvoir terminer le `merge`.
+Si Git n'arrive pas à réaliser le merge de lui même parce que des changements se sont produits pour les mêmes lignes des mêmes fichiers dans deux branches différentes, un conflit va se produire.
+
+Git va alors nous demander de le règler manuellement et d'ensuite faire un commit pour enregistrer les changelents et pouvoir terminer le `merge`.
 
 ### Git stash
 
