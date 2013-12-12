@@ -1,5 +1,7 @@
 # Cours IAD: Introduction à Git
 
-Les syllabi des cours donnés par Jérôme Coupé à l'IAD. Ils sont mis à jour en continu.
+Introduction à [Git](http://git-scm.com/), un système de version control décentralisé.
 
-Les cours encore au format .pdf seront mis en ligne petit à petit sur Github
+Syllabus du cours donné à l'Institut des Arts de Diffusion par Jérôme Coupé.
+
+Licence: [Creative Commons Attribution 4.0 International license](http://creativecommons.org/licenses/by/4.0/)

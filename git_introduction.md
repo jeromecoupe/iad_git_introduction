@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Git est un système de version control qui enregistre les changements réalisés dans le cadre de vos projets. Bien que principalement destiné aux fichiers textes, git permet de versionner n'importe quel type de fichier informatique.
+[Git](http://git-scm.com/) est un système de version control qui enregistre les changements réalisés dans le cadre de vos projets. Bien que principalement destiné aux fichiers textes, git permet de versionner n'importe quel type de fichier informatique.
 
 Créé en 2005 par Linus Torvalds ce système simple d'utilisation permet de facilement enregistrer les changements effectués sur des fichiers au sein d'un projet, de revenir en arrière si besoin est et même de gérer en paralèlle plusieurs versions de votre projet.
 
@@ -28,7 +28,7 @@ Avant toute chose nous allons configurer git avec votre nom d'utilisateur et vot
 
 `git config --global user.name "Your Name"` pour configurer votre nom d'utilisateur
 
-`git config --global user.email "name@domain.com"` pour configurer votre email 
+`git config --global user.email "name@domain.com"` pour configurer votre email
 
 
 ### Syntaxe coloring
@@ -77,9 +77,9 @@ Si Git ne peut pas lui même resoudre les conflits entre deux version d'un même
 
 ## Workflow git
 
-Voici un workflow simple pour les projets web, adapté du workflow [Gitflow de Vincent Driessen](http://nvie.com/posts/a-successful-git-branching-model/) 
+Voici un workflow simple pour les projets web, adapté du workflow [Gitflow de Vincent Driessen](http://nvie.com/posts/a-successful-git-branching-model/)
 
-- La branche master est le site tel que déployé en production 
+- La branche master est le site tel que déployé en production
 - Une branche de dévelopement est utilisée pour développer le projet et est souvent déployée sur un serveur de staging
 - Les feature branches sont utilisées pour développer certaines features spécifiques qui sont suffisemment importantes que pour nécessiter de les séparer de la branche de dévelopement.
 - Une fois une feature réalisée, la feature est mergée en dévelopement et testée sur le serveur de staging
@@ -152,7 +152,7 @@ Si vous utilisez convenablement les branches, ce genre de situation est assez ra
 
 ### Ignorer des fichers
 
-Il est parfois très utile de pouvoir ignorer des fichiers dans un repository. Si vous travaillez avec un CMS dont certains fichiers de configuration sont spécifiques à votre machine locale, il est important d'ignorer ces fichiers. 
+Il est parfois très utile de pouvoir ignorer des fichiers dans un repository. Si vous travaillez avec un CMS dont certains fichiers de configuration sont spécifiques à votre machine locale, il est important d'ignorer ces fichiers.
 
 De la même manière, des fichiers de log ou de cache peuvent également être ignorés systématiquement, de même que certains fichiers créés par l'opérating system.
 
@@ -180,7 +180,7 @@ Un fichier .gitignore peut être créé dans n'importe quel directory pour ignor
 
 ## Branching et Merging
 
-Git permet de créer des versions parralèle de votre projet appellées branches. Comme dit plus haut, cela permet de travailler sur un développement tout en laissant la branche `master` du projet en l'état. 
+Git permet de créer des versions parralèle de votre projet appellées branches. Comme dit plus haut, cela permet de travailler sur un développement tout en laissant la branche `master` du projet en l'état.
 
 ### Git branch
 
@@ -216,7 +216,7 @@ Git stash est une option intéressante lorsque vous avez une urgence et que vous
 
 `git stash`: permet de sauver les changements en cours et de revenir à la situation de votre dernier commit
 
-`git stash list`: permet de voir une liste des stash sauvés 
+`git stash list`: permet de voir une liste des stash sauvés
 
 `git stash apply` permet ensuite de réappliquer ces changements et de reprendre le cours de votre travail.
 
