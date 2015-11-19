@@ -134,7 +134,7 @@ Vous pouvez encore demander à Git d'afficher seulement les commits liés à un 
 
 `git log --pretty=oneline` ou `git log --oneline` permet de visualiser l'historique des commits en une seule ligne.
 
-Il est également possible de de visulaiser "graphiquement" votre repository avec les options suivantes: `git log --decorate --graph`
+Il est également possible de de visualiser "graphiquement" votre repository avec les options suivantes: `git log --decorate --graph`
 
 ### Revenir en arrière avec revert et reset
 
@@ -166,7 +166,7 @@ Vous pouvez également cibler tous les fichiers dans un directory de manière r�
 
 #### Fichier .gitignore
 
-Un fichier .gitignore peut être créé dans n'importe quel directory pour ignorer certains fichiers de façon permamnente. Personellement, je préfère, dans la mesure du possible n'avoir qu'un seul fichier .gitignore`. Voici un exemple d'un tel fichier.
+Un fichier .gitignore peut être créé dans n'importe quel directory pour ignorer certains fichiers de façon permamnente. Personellement, je préfère, dans la mesure du possible n'avoir qu'un seul fichier `.gitignore`. Voici un exemple d'un tel fichier.
 
 ```
 *.DS_Store
@@ -184,9 +184,9 @@ Git permet de créer des versions parralèle de votre projet appellées branches
 
 ### Git branch
 
-`git branch` permet de voir toutes les branches actives dans votre repository. La branche sur laquelle vous travaillez (checked out branch) est marquée d'une astérisque (*).
+`git branch` permet de voir toutes les branches actives dans votre repository. La branche sur laquelle vous travaillez (checked out branch) est marquée d'une astérisque "\*".
 
-La commande `git branch dev` permet de créer une branche nommée "dev". Les noms de branches ne peuvent pas contenir d'espaces. Utilisez donc des tiret ou des underscores. La branche `dev` est une copie de la branche `master`au moment où elle a été créée.
+La commande `git branch dev` permet de créer une branche nommée "dev". Les noms de branches ne peuvent pas contenir d'espaces. Utilisez donc des tirets ou des underscores. La branche `dev` est une copie de la branche `master`au moment où elle a été créée.
 
 ### Git checkout
 
@@ -200,6 +200,11 @@ Pour appliquer les changements réalisés dans la branche `dev`à la branche `ma
 
 `git merge dev` pour effectuer le merge.
 
+Vous pouvez également forcer Git à toujours générer un commit pour le merge quoi qu'il arrive. Personellement, j'utilise toujours cette commande dans la mesure où elle permet de mieux visualiser les branches. `--no-ff` veut dire "no fast-forward", ce qui interdit à Git de faire le merge automatiquement sans générer de commit.
+
+`git merge dev --no-ff`
+
+
 ### Supprimer une branche
 
 `git branch -d dev` permet de supprimer la branche `dev`
@@ -212,7 +217,7 @@ Git va alors nous demander de le règler manuellement et d'ensuite faire un comm
 
 ### Git stash
 
-Git stash est une option intéressante lorsque vous avez une urgence et que vous voulez temporairement sauver votre travail non finalisé pour revenir à la situation de votre dernier commit.
+Git stash est une option intéressante lorsque vous avez une urgence et que vous voulez temporairement sauver votre travail non finalisé pour revenir à la situation de votre dernier commit. Pensez-y comme une sorte de clipboard perfectionné.
 
 `git stash`: permet de sauver les changements en cours et de revenir à la situation de votre dernier commit
 
