@@ -30,7 +30,6 @@ Avant toute chose nous allons configurer git avec votre nom d'utilisateur et vot
 
 `git config --global user.email "name@domain.com"` pour configurer votre email
 
-
 ### Syntaxe coloring
 
 `git config --global color.ui true` pour avoir des jolies couleurs dans votre éditeur
@@ -120,7 +119,7 @@ Pour faire des messages de commit plus élaborés, vous pouvez utiliser votre é
 
 ### Commit & adding
 
-`git commit -a -m "commit message"` permet d'ajouter vos fichier au stage et de  faire un commit simultanément en lui apposant le message "commit message"
+`git commit -a -m "commit message"` permet d'ajouter vos fichiers au stage et de faire un commit simultanément en lui apposant le message "commit message"
 
 ### Git log
 
@@ -128,7 +127,7 @@ Pour faire des messages de commit plus élaborés, vous pouvez utiliser votre é
 
 Quelques options vous permettent de préciser les choses:
 
-Vous pouvez limiter le nombre de commit visibles avec la commande `git log -2` pour obtenir seulement les deux derniers commits.
+Vous pouvez limiter le nombre de commits visibles avec la commande `git log -2` pour obtenir seulement les deux derniers commits.
 
 Vous pouvez encore demander à Git d'afficher seulement les commits liés à un seul fichier `git log index.html` ou limiter les commits à un seul utilisateur `git log --author=jeromecoupe`
 
@@ -140,7 +139,7 @@ Il est également possible de de visualiser "graphiquement" votre repository ave
 
 Il est possible de revenir en arrière dans votre historique. C'est à cela que servent les commits et les hashs qui les identifient.
 
-La commande `revert` permet de revenir en arrière sans affecter votre historique, vous revenez à votre commit choisi et vous derez ensuite faire un `add` et un `commit` pour enregistrer les changements en résolvant les conflits éventuels.
+La commande `revert` permet de revenir en arrière sans affecter votre historique, vous revenez à votre commit choisi et vous devrez ensuite faire un `add` et un `commit` pour enregistrer les changements en résolvant les conflits éventuels.
 
 `git revert 3ca7a822e4d4897eca2e651d0996429875452d05`
 
@@ -180,7 +179,7 @@ Un fichier .gitignore peut être créé dans n'importe quel directory pour ignor
 
 ## Branching et Merging
 
-Git permet de créer des versions parralèle de votre projet appellées branches. Comme dit plus haut, cela permet de travailler sur un développement tout en laissant la branche `master` du projet en l'état.
+Git permet de créer des versions parallèles de votre projet appellées branches. Comme dit plus haut, cela permet de travailler sur un développement tout en laissant la branche `master` du projet en l'état.
 
 ### Git branch
 
@@ -203,7 +202,6 @@ Pour appliquer les changements réalisés dans la branche `dev`à la branche `ma
 Vous pouvez également forcer Git à toujours générer un commit pour le merge quoi qu'il arrive. Personellement, j'utilise toujours cette commande dans la mesure où elle permet de mieux visualiser les branches. `--no-ff` veut dire "no fast-forward", ce qui interdit à Git de faire le merge automatiquement sans générer de commit.
 
 `git merge dev --no-ff`
-
 
 ### Supprimer une branche
 
@@ -255,14 +253,13 @@ par exemple
 
 ### Git clone
 
-Pour copier un repository distant sur votre lachine locale, ulilisez simpelment la commande `git clone`
+Pour copier un repository distant sur votre machine locale, ulilisez simpelment la commande `git clone`
 
 `git clone git@github.com:jeromecoupe/testgit.git <folder>`
 
 par exemple
 
 `git clone git@github.com:jeromecoupe/testgit.git git_test_repo`
-
 
 ## Interfaces graphiques
 
