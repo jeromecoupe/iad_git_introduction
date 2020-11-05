@@ -183,7 +183,7 @@ Git permet de créer des versions parallèles de votre projet appellées branche
 
 ### Git branch
 
-`git branch` permet de voir toutes les branches actives dans votre repository. La branche sur laquelle vous travaillez (checked out branch) est marquée d'une astérisque "\*".
+`git branch` ou `git branch --list` permettent de voir toutes les branches actives dans votre repository. La branche sur laquelle vous travaillez (checked out branch) est marquée d'une astérisque "\*".
 
 La commande `git branch dev` permet de créer une branche nommée "dev". Les noms de branches ne peuvent pas contenir d'espaces. Utilisez donc des tirets ou des underscores. La branche `dev` est une copie de la branche `master`au moment où elle a été créée.
 
@@ -269,9 +269,11 @@ Pour une liste des interfaces graphiques utilisables avec Git, voir la section q
 
 Personnellement, j'utilise [Git Tower](http://www.git-tower.com/) qui est un programme payant, mais d'une grande convivialité et d'une grande facilité d'utilisation.
 
-## Déployer vos sites avec Git et Beanstalk
+## Déployer vos sites à partir d'un repository
 
-De nombreuses solutions existent également pour déployer vos repositories Git vers un serveur de production ou de staging. Ma solution favorite est [Beanstalk](http://www.beanstalkapp.com/) qui fait à la fois du hosting de repositories git et des délpoiements en FTP, SFTP etc.
+Certains hébergeurs de sites statiques tels que [Netlify](https://www.netlify.com/) ou [Vercel](https://vercel.com/) vous permettent de déployer vos sites automatiquement dès qu'un commit est détecté dans une branche donnée d'un repository Git (généralement `master`). [Github pages](https://pages.github.com/) utilise un système similaire.
+
+De nombreuses solutions existent également pour déployer vos repositories Git vers un serveur de production ou de staging. Mes solutions favorites sont [Buddy](https://buddy.works/), [DeployHQ](https://www.deployhq.com/) et [Github Actions](https://docs.github.com/en/free-pro-team@latest/actions)
 
 ## Ressources
 
