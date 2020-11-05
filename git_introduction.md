@@ -11,7 +11,7 @@ Un élément du succès de Git comme système de version control, c'est son cara
 En résumé:
 
 - Git vous permet de facilement suivre et enregistrer les changements apportés à vos fichiers et de facilement revenir en arrière si besoin est
-- Git (et github) facilitent grandement la collaboration et le travail en équipe sur des projets de natures très diverses
+- Git (et Github) facilitent grandement la collaboration et le travail en équipe sur des projets de natures très diverses
 - Git vous permet de créer des branches distinctes au sein de vos projets, de gérer celles-ci en parallèle ou des les combiner en une seule version.
 
 En outre de très nombreux [tutoriaux](http://git-scm.com/videos), services et [logiciels disposant d'une interface graphique](http://git-scm.com/downloads/guis) se sont dévelopés autour de Git, faisant de ce dernier un standard de l'industrie.
@@ -26,15 +26,13 @@ Git est très facile à installer. Des programmes d'installation sont [disponibl
 
 Avant toute chose nous allons configurer git avec votre nom d'utilisateur et votre email
 
-`git config --global user.name "Your Name"` pour configurer votre nom d'utilisateur
-
-`git config --global user.email "name@domain.com"` pour configurer votre email
+- `git config --global user.name "Your Name"` pour configurer votre nom d'utilisateur
+- `git config --global user.email "name@domain.com"` pour configurer votre email
 
 ### Syntaxe coloring
 
-`git config --global color.ui true` pour avoir des jolies couleurs dans votre éditeur
-
-`git config --global core.editor "nano"` pour utiliser nano à la place de Vi comme éditeur (Vi est assez déroutant pour commencer)
+- `git config --global color.ui true` pour avoir des jolies couleurs dans votre éditeur
+- `git config --global core.editor "nano"` pour utiliser nano à la place de Vi comme éditeur (Vi est assez déroutant pour commencer)
 
 ## Notions de base
 
@@ -60,9 +58,11 @@ Il est important de réaliser ces commits regulièrement, afin de pouvoir facile
 
 ### Stage
 
-Avant de pouvoir effectuer une quelconque opération sur un fichier, il vous faudra d'abord ajouter ce dernier au repository. C'est le concept de "stage".
+Avant de pouvoir effectuer une quelconque opération sur un fichier, il vous faudra d'abord ajouter ce dernier à la "stage".
 
-Cela permet à Git d'être extrèmement flexible quant aux fichiers que vous voulez manipuler. Vous pouvez en effet choisir précisément quels fichiers vous voulez ajouter et à quel moment vous souhaitez les ajouter. Admettons que vous ayez modifié plusieurs fichiers, cette notion de stage / staging vous permet de séparer ces fichiers en plusieurs groupes que vous pouvez manipuler séparément via Git.
+Cela permet à Git d'être extrèmement flexible quant aux fichiers que vous voulez manipuler.
+
+Vous pouvez en effet choisir précisément quels fichiers vous voulez ajouter à un commit et à quel moment vous souhaitez les ajouter. Admettons que vous ayez modifié plusieurs fichiers, cette notion de stage / staging vous permet de séparer ces fichiers en plusieurs groupes que vous pouvez manipuler séparément via Git.
 
 ### Repository distants, branches, merge et résolution de conflits
 
@@ -217,11 +217,9 @@ Git va alors nous demander de le règler manuellement et d'ensuite faire un comm
 
 Git stash est une option intéressante lorsque vous avez une urgence et que vous voulez temporairement sauver votre travail non finalisé pour revenir à la situation de votre dernier commit. Pensez-y comme une sorte de clipboard perfectionné.
 
-`git stash`: permet de sauver les changements en cours et de revenir à la situation de votre dernier commit
-
-`git stash list`: permet de voir une liste des stash sauvés
-
-`git stash apply` permet ensuite de réappliquer ces changements et de reprendre le cours de votre travail.
+- `git stash`: permet de sauver les changements en cours et de revenir à la situation de votre dernier commit
+- `git stash list`: permet de voir une liste des stash sauvés
+- `git stash apply` permet ensuite de réappliquer ces changements et de reprendre le cours de votre travail.
 
 ## Travailler avec des repository distants
 
@@ -241,11 +239,9 @@ par exemple
 
 ### Git push
 
-`git push origin --all` permet de faire un push de toutes les branches vers le repository distant "origin".
-
-`git push origin master` Permet de ne faire un push que de la branche master
-
-`git push origin :dev` ou `git remote remove dev` Permet de supprimer la branche "dev" du repository distant
+- `git push origin --all` permet de faire un push de toutes les branches vers le repository distant "origin".
+- `git push origin master` Permet de ne faire un push que de la branche master
+- `git push origin :dev` ou `git remote remove dev` Permet de supprimer la branche "dev" du repository distant
 
 ### Git pull
 
@@ -279,6 +275,7 @@ De nombreuses solutions existent également pour déployer vos repositories Git 
 
 - [Get started with Git](http://alistapart.com/article/get-started-with-git) (A list Apart): Introduction générale.
 - [Video: Introduction to Git by Mijingo](http://mijingo.com/products/screencasts/git-tutorial-video/) (Ryan Irelan): très bonne introduction très didactique.
+- [Oh Shit, Git!?!](https://ohshitgit.com/): Bonne liste des petites astuces Git pour vous aider si vous avez l'impression de vous être trompés.
 - [Git reference et cheat cheets](http://git-scm.com/docs): les man pages de git dispponibles en ligne, pas toujours digeste mais bonne référence.
 - [Vidéos d'introduction à Git](http://git-scm.com/videos): vidéos officielles.
 - [Git Immersion](http://gitimmersion.com/index.html) ([Neo](http://www.neo.com/)): une bonne introduction à Git, très complet.
