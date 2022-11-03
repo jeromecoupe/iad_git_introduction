@@ -263,7 +263,7 @@ De nombreuses interfaces graphiques existent pour Git si le terminal n'est pas v
 
 Pour une liste des interfaces graphiques utilisables avec Git, voir la section qui leur est consacrée [sur le site officiel de Git](http://git-scm.com/downloads/guis).
 
-Personnellement, j'utilise [Git Tower](http://www.git-tower.com/) qui est un programme payant, mais d'une grande convivialité et d'une grande facilité d'utilisation.
+Personnellement, j'utilise [Github Desktop](https://desktop.github.com/) qui est un programme gratuit, et facile d'utilisation. J'utilise également les fonctions Git de Visual Studio Code.
 
 ## Déployer vos sites à partir d'un repository
 
